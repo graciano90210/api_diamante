@@ -1,10 +1,26 @@
-# Entorno Virtual de Python
-.venv/
-venv/
-
-# Archivos de PyCharm
+# Archivos de PyCharm (IDE)
 .idea/
+*.iml
+.DS_Store
 
-# Cache de Python
+# Directorios de caché y compilación de Python
 __pycache__/
 *.pyc
+*.pyd
+.Python
+env/
+venv/
+*.egg-info/
+
+# Archivos de artefactos y modelos (¡muy importantes!)
+# NO queremos subir modelos pesados o archivos binarios al repositorio
+# Estos archivos se regeneran o se guardan en un servicio como S3/Drive
+modelo_diamante_v3.pkl
+scaler_diamante.pkl
+
+# Archivos de log y test
+logs/
+test_results/
+
+# Archivos de configuración de variables de entorno
+.env
