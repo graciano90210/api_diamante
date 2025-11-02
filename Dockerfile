@@ -9,4 +9,3 @@ COPY modelo_diamante_v3.pkl .
 COPY scaler_diamante.pkl .
 EXPOSE 5000
 CMD ["python", "app.py"]
-```
