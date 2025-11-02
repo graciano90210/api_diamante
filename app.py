@@ -1,6 +1,7 @@
 import pandas as pd
 import joblib
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from pydantic import BaseModel, Field  # <--- Importaciones de Pydantic
 from typing import Optional  # Aunque ya no lo usaremos en CreditData
 from pydantic import ValidationError  # Para manejar errores específicos
